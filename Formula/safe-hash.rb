@@ -5,21 +5,21 @@ class SafeHash < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.3/safe-hash-aarch64-apple-darwin.tar.xz"
-      sha256 "e983491d4a5493e1ae1abdc96bfe5ef49101087edc716bb1854a9fb850bfbb80"
+      sha256 "5384f22ce7d3850f2bac3cb33109906ea42d8ce9c4d7e567abb3015981287019"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.3/safe-hash-x86_64-apple-darwin.tar.xz"
-      sha256 "497ee037893a347b9aba63055d8db4ab9dec4e2321661889092cff4d37c23e01"
+      sha256 "4b36cd1bebf7f6404b749d0b7e70bc80770fb66fd52bbdf504ad098f8864de5e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.3/safe-hash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "72e8fff42420e26fe94e974a878cd534eb951e82dfbe2d7b9a717dea222ab610"
+      sha256 "ed358a56b5e6de9d1394240a499021d8814e1836621b8f3bde1950042646e055"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.3/safe-hash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "59c17281075ac4618ecd2ea775d291b1502dc36f4f1a881fcbfc73b72bf32495"
+      sha256 "c022f5ba5f91841446a212fedbfcef55feb3d23559f01288a896b1db26d6405e"
     end
   end
 
