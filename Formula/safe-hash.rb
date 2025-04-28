@@ -1,25 +1,25 @@
 class SafeHash < Formula
   desc "Verify Safe Wallet Transactions and Messages"
   homepage "Verify Safe Wallet Transactions and Messages"
-  version "0.0.9"
+  version "0.0.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.9/safe-hash-aarch64-apple-darwin.tar.xz"
-      sha256 "6eef277f99867f9a4d7fe02ce8de35a7ab046ab196ad49b762516eb8652c3fc5"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.10/safe-hash-aarch64-apple-darwin.tar.xz"
+      sha256 "d39f77dd20698028d2298578ce72d848a00b144f4aa974a9dafa2e0c7841e0f5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.9/safe-hash-x86_64-apple-darwin.tar.xz"
-      sha256 "38f8e2d55cb23b72adfe40bbf757d5eebf840d664a7cbdf1d7d198ff58f6128c"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.10/safe-hash-x86_64-apple-darwin.tar.xz"
+      sha256 "5734c53f7bcc06b0d4c716e12e36b866998e73f038cca48e2421af15b5e9f37d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.9/safe-hash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "423af8dd39168c3718bde3d16162156b38eb10ad191858696f27756c73051837"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.10/safe-hash-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f1b9f5d6dc332d010cabf82cfba28d48df536c36a95306eeedda3cf7fed289f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.9/safe-hash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d5088c239d0e22602501e06f6e16dc06e371af3e9b029891d584dd7cbfc66f02"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.10/safe-hash-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5c8d32884abc598684cdb142ae9df1ead4ac515630d0eab636a22fd86961308d"
     end
   end
 
