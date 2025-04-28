@@ -1,25 +1,25 @@
 class SafeHash < Formula
   desc "Verify Safe Wallet Transactions and Messages"
   homepage "Verify Safe Wallet Transactions and Messages"
-  version "0.0.11"
+  version "0.0.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.11/safe-hash-aarch64-apple-darwin.tar.xz"
-      sha256 "27276f5fbe8b7b6713dcddf9088bfb006e186330e6ba2cbff9aab11380cb40a5"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.12/safe-hash-aarch64-apple-darwin.tar.xz"
+      sha256 "84f375bb2f374350c78217c4df24f170d0b3b51221cbbcba49b310681fecd04f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.11/safe-hash-x86_64-apple-darwin.tar.xz"
-      sha256 "581dd9261569fc4ffb28bbc8dd1cac4154ac4c250bd9793d49d44ec508fda40d"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.12/safe-hash-x86_64-apple-darwin.tar.xz"
+      sha256 "718a5706774a043a5f0faa1766a44fdbfd60d602e042ff9f5121a5e171aaf4c3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.11/safe-hash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "480f98911f649e89fadeeb3daf4f305ae136b648de78f988baf6e2f7e78ebe94"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.12/safe-hash-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e44bb8de7c581f069bd9b86b85aeaca86cf10967261d8cbbf2585cbfa0ba5e47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.11/safe-hash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b15f30e282729836f9b0be74e829faabb8617fc8c939017f417122164c201b3a"
+      url "https://github.com/Cyfrin/safe-hash-rs/releases/download/safe-hash-v0.0.12/safe-hash-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e45f2f7166fb5f9035f8a91b911ddde9f6ca7476a8b57a0638fbb64928c5cc03"
     end
   end
 
