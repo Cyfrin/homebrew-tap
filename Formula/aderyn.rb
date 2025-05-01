@@ -1,36 +1,34 @@
 class Aderyn < Formula
   desc "Rust based Solidity AST analyzer"
   homepage "https://github.com/cyfrin/aderyn"
-  version "0.5.8"
+  version "0.5.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.8/aderyn-aarch64-apple-darwin.tar.xz"
-      sha256 "62424945acf70182a2d8fe079a69142bc1da129fc3233ebc00c7c93aaad74538"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-aarch64-apple-darwin.tar.xz"
+      sha256 "2ce0e107d4bb320f3521869fda6d0ca37b8421478d2ee06faaf733f4dce4ab42"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.8/aderyn-x86_64-apple-darwin.tar.xz"
-      sha256 "ccda8de3821e02bed41cae74587f6b3355a38760acc93f15a9c371a3f6feb4f1"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-x86_64-apple-darwin.tar.xz"
+      sha256 "ff2e2ec97c01de51eef3845c5bd860fb7a48f2e383648f29078156a67f8afdd2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.8/aderyn-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "44f0d5be5209c210b926ceaa80f8523ba4cbb4bc1e214c02f725cdc233b61538"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "199bd0f39ecd8dc172d879e12cee3bd67e9ec5f26c874dc59df416118a214ced"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.8/aderyn-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f8b1d7e502f9ff755b3020eedb2e8d146f8cd38deb22f7522b5742d8d722ecc5"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e3b85c067708d8fdeee353dc633694cbafaccf7edfbb5a7622562e805156319b"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":              {},
-    "aarch64-unknown-linux-gnu":         {},
-    "x86_64-apple-darwin":               {},
-    "x86_64-unknown-linux-gnu":          {},
-    "x86_64-unknown-linux-musl-dynamic": {},
-    "x86_64-unknown-linux-musl-static":  {},
+    "aarch64-apple-darwin":      {},
+    "aarch64-unknown-linux-gnu": {},
+    "x86_64-apple-darwin":       {},
+    "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
   def target_triple
