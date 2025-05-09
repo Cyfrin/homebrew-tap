@@ -1,25 +1,25 @@
 class Aderyn < Formula
   desc "Rust based Solidity AST analyzer"
   homepage "https://github.com/cyfrin/aderyn"
-  version "0.5.10"
+  version "0.5.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-aarch64-apple-darwin.tar.xz"
-      sha256 "2ce0e107d4bb320f3521869fda6d0ca37b8421478d2ee06faaf733f4dce4ab42"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.11/aderyn-aarch64-apple-darwin.tar.xz"
+      sha256 "886be646035046745b5a4ad663c9cc789ced8fd29b814c2b504deff6386a3fa5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-x86_64-apple-darwin.tar.xz"
-      sha256 "ff2e2ec97c01de51eef3845c5bd860fb7a48f2e383648f29078156a67f8afdd2"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.11/aderyn-x86_64-apple-darwin.tar.xz"
+      sha256 "4715fd599c079bafd97b2190c8df7c79904b217aa1eb963ce970cfdad2228606"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "199bd0f39ecd8dc172d879e12cee3bd67e9ec5f26c874dc59df416118a214ced"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.11/aderyn-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "86fa9604531482c1aa8ec34df747b8d51f806e891d8de324523669cf5c5c5ddb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.10/aderyn-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e3b85c067708d8fdeee353dc633694cbafaccf7edfbb5a7622562e805156319b"
+      url "https://github.com/cyfrin/aderyn/releases/download/aderyn-v0.5.11/aderyn-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "557626eddda476b6a60b883e0354e8bedae3deb678387119cf5e60e109db6c63"
     end
   end
   license "MIT"
