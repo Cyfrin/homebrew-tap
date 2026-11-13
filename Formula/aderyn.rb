@@ -24,6 +24,8 @@ class Aderyn < Formula
   end
   license "MIT"
 
+  disable! date: "2026-11-13", because: :deprecated_upstream
+
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
